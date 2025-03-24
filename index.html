@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rossi di Valle - Vinhos de Excelência</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <img src="images/Logo.png" class="logo" alt="logo">
+           
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vinhos">Vinhos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-cart" id="cart-btn">
+                            <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span>
+                            
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center text-white">
+            <h1>Experiência e Tradição em Cada Gole</h1>
+            <p>Descubra os vinhos da Rossi di Valle</p>
+            <a href="#vinhos" class="btn btn-custom">Conheça Nossos Vinhos</a>
+        </div>
+    </header>
+  <!-- Nossos Vinhos -->
+  <section id="vinhos" class="vinhos">
+    <div class="container text-center">
+        <h2>Nossos Vinhos</h2>
+        <div class="row">
+            <!-- Vinho Tinto -->
+            <div class="col-md-3">
+                <div class="card vinho-card">
+                    <img src="images/vinho_tinto.png" class="card-img-top" alt="Vinho Tinto">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vinho Tinto Seleção Suave</h5>
+                        <p class="card-text text-danger fw-bold">R$ 120,00</p>
+                        <button class="btn btn-custom add-cart" data-name="Vinho Tinto" data-price="120.00">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vinho Branco -->
+            <div class="col-md-3">
+                <div class="card vinho-card">
+                    <img src="images/vinho_branco.png" class="card-img-top" alt="Vinho Branco">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vinho Branco Seleção Suave</h5>
+                        <p class="card-text text-danger fw-bold">R$ 115,00</p>
+                        <button class="btn btn-custom add-cart" data-name="Vinho Branco" data-price="115.00">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vinho Espumante -->
+            <div class="col-md-3">
+                <div class="card vinho-card">
+                    <img src="images/vinho_espumante.png" class="card-img-top" alt="Vinho Espumante">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vinho Espumante Edição Especial</h5>
+                        <p class="card-text text-danger fw-bold">R$ 180,00</p>
+                        <button class="btn btn-custom add-cart" data-name="Vinho Espumante" data-price="180.00">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vinho Rosé -->
+            <div class="col-md-3">
+                <div class="card vinho-card">
+                    <img src="images/vinho_rose.png" class="card-img-top" alt="Vinho Rosé">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vinho Rosé Seleção Premium</h5>
+                        <p class="card-text text-danger fw-bold">R$ 130,00</p>
+                        <button class="btn btn-custom add-cart" data-name="Vinho Rosé" data-price="130.00">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<div class="subscription-carousel-container">
+    <div class="row">
+    <h2 class="subscription-title">Escolha seu plano ideal</h2>
+    <div class="subscription-carousel">
+        <div class="subscription-card">
+            <h3 class="subscription-name">Plano Experiência</h3>
+            <p class="subscription-description">Seleção feita sob medida para quem quer conhecer mais sobre vinho </p>
+            <p class="subscription-old-price">R$ 169,90</p>
+            <p class="subscription-price">R$ 127,43/mês</p>
+            <a href="#" class="subscription-btn subscription-btn-primary">Assinar</a>
+        </div>
+        <div class="subscription-card">
+            <h3 class="subscription-name">Plano Reserva</h3>
+            <p class="subscription-description">Plano ideal para quem busca experiências que desafiem o paladar.</p>
+            <p class="subscription-old-price">R$ 249,90</p>
+            <p class="subscription-price">R$ 187,43/mês</p>
+            <a href="#" class="subscription-btn subscription-btn-primary">Assinar</a>
+        </div>
+        <div class="subscription-card">
+            <h3 class="subscription-name">Plano Especial</h3>
+            <p class="subscription-description">Uma grande seleção com rõtulos que vão conquistar você.</p>
+            <p class="subscription-old-price">R$ 499,90</p>
+            <p class="subscription-price">R$ 374,93/mês</p>
+            <a href="#" class="subscription-btn subscription-btn-primary">Assinar</a>
+        </div>
+        <div class="subscription-card">
+            <h3 class="subscription-name">Plano Rossi Reserva</h3>
+            <p class="subscription-description">Lugar especial nas suas lembranças.</p>
+            <p class="subscription-old-price">R$ 799,90</p>
+            <p class="subscription-price">R$ 599,93/mês</p>
+            <a href="#" class="subscription-btn subscription-btn-primary">Assinar</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Sobre Nós -->
+    <!-- Sobre Nós -->
+<section id="sobre" class="sobre bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Google Maps Embed com localização exata -->
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1000!2d-37.13225641957053!3d-10.945696388546697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLTEwLjk0NTY5NiwtMzcuMTMyMjU2!5e0!3m2!1sen!2sbr!4v1711045678901!5m2!1sen!2sbr" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+            <div class="col-md-6">
+                <h2>Sobre a Vinícola</h2>
+                <p>Com uma tradição centenária, a Rossi di Valle produz vinhos de alta qualidade, combinando técnicas modernas e respeito à natureza.</p>
+                <p>Localizada em Sergipe, nosso terroir único proporciona uvas de excelente qualidade para vinhos sofisticados.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+   
+    <!-- Carrinho (Pop-up) -->
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-content">
+            <h3>🛒 Meu Carrinho</h3>
+            <ul id="cart-items"></ul>
+            <p><strong>Total:</strong> R$ <span id="cart-total">0.00</span></p>
+            <button class="btn btn-danger" id="close-cart">Fechar</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="rodape" id="contato">
+        <nav class="btn_social">
+            <span><b><img src="images/Logo.png" class="logo" alt="logo"></b></span>
+            <div class="email-container">
+                <input type="email" placeholder="Seu email">
+                <button type="submit">contato →</button>
+            </div>
+            
+         </nav> 
+        <div class="rodape-div">
+    
+            <div class="rodape-div-1">
+                <div class="rodape-div-1-coluna">
+    
+                    
+                    <p>Rod. João Bebe Água, 3372-3376
+                        São Cristóvão - SE, 49100-000</p>
+                </div>
+            </div>
+    
+            <div class="rodape-div-2">
+                <div class="rodape-div-2-coluna">
+    
+                    <span><b>Contatos</b></span>
+                    <p> contato@rossidivalle.com.br</p>
+                    <p> +55 79 99999-0000</p>
+                </div>
+            </div>
+    
+            <div class="rodape-div-3">
+                <div class="rodape-div-3-coluna">
+    
+                    <span><b>Links</b></span>
+                    <p><a href="#servicos">Serviços</a></p>
+                    <p><a href="#empresa">Empresa</a></p>
+                    <p><a href="#sobre">Sobre</a></p>
+                </div>
+            </div>
+    
+            <div class="rodape-div-4">
+                <div class="rodape-div-4-coluna">
+    
+                    <span><b>Outros</b></span>
+                    <p>Políticas de Privacidade</p>
+                </div>
+            </div>
+    
+        </div>
+        <p class="rodape-direitos">Copyright © 2023 – Todos os Direitos Reservados.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
